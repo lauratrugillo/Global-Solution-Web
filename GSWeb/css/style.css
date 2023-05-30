@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
 * {
     margin: 0; padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     color: black;
 }
 
 body {
+    width: 100%;
     min-height: 100vh;
 }
 
@@ -60,6 +63,7 @@ header label {
 }
 
 main {
+    min-height: 100vh;
     padding: 80px 50px;
 }
 
@@ -112,6 +116,51 @@ main form #botao {
     background-color: green;
     color: #fff;
     border: none;
+}
+
+main h1 {
+    padding: 0px 0px 20px;
+}
+
+main p {
+    padding: 0px 0px 20px;
+    text-align: justify;
+}
+
+main .imagens {
+    text-align: center;
+}
+
+main .imagens li {
+    display: inline-flex;
+    padding: 14px 16px;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+}
+
+main .imagens li img {
+    width: 20em;
+    height: 12em;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+}
+
+footer {
+    width: 100%;
+    background-color: #333;
+    padding: 2em;
+    font-size: medium;
+}
+
+footer p {
+    color: #b5b5b5;
+    padding: 0 0 5px;
+}
+
+footer ul li {
+    list-style: none;
+    color: #b5b5b5;
+    padding-left: 10px;
 }
 
 @media(max-width: 500px) {
@@ -172,6 +221,7 @@ main form #botao {
     main form {
         border: none;
     }
+
     
 }
 
@@ -222,6 +272,7 @@ main form #botao {
     main form #botao {
         width: 50%;
     }
+
 
 }
 
