@@ -57,6 +57,7 @@ header label {
     font-size: medium;
     cursor: pointer;
     display: none;
+    color: #fff;
 }
 
 @media(max-width: 900px) {
