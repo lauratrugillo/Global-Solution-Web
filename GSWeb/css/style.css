@@ -2,7 +2,6 @@
     margin: 0; padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    text-transform: capitalize;
     text-decoration: none;
     color: black;
 }
@@ -60,14 +59,74 @@ header label {
     color: #fff;
 }
 
-@media(max-width: 900px) {
+main {
+    padding: 80px 50px;
+}
+
+main form {
+    width: 100%;
+    height: auto;
+    padding: 2%;
+    border-style: solid;
+    border-radius: 2%;
+    border-width: 1px;
+    text-align: center;
+}
+
+main form h2 {
+    padding: 20px 0px 15px;
+}
+
+main form .campos {
+    display: flex;
+    flex-direction: row;
+    padding: 5px 10px 20px;
+    flex-wrap: wrap;
+}
+
+main form .campos textarea {
+    width: 98%;
+}
+
+main form label {
+    text-align: center;
+    font-size: large;
+    color: black;
+    width: 50%;
+}
+
+main form input {
+    font-size: medium;
+    height: 32px;
+    width: 98%;
+    background-color: white ;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    display: block;
+    padding: 2px 5px;
+}
+
+main form #botao {
+    width: 30%;
+    background-color: green;
+    color: #fff;
+    border: none;
+}
+
+@media(max-width: 500px) {
 
     header {
         padding: 20px;
     }
 
+    header .logo {
+        font-size: medium;
+    }
+
     header label {
         display: initial;
+        font-size: medium;
     }
 
     header .navbar {
@@ -82,9 +141,87 @@ header label {
         width: 100%;
     }
 
+    header .navbar ul li a {
+        font-size: medium;
+    }
+
     #menu-bar:checked ~ .navbar {
         display: initial;
     }
+
+    main {
+        padding: 80px 10px;
+    }
+
+    main form label {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    main form .campos {
+        display: flex;
+        flex-direction: row;
+        padding: 5px 10px 5px;
+        flex-wrap: wrap;
+    }
+
+    main form #botao {
+        width: 50%;
+    }
+
+    main form {
+        border: none;
+    }
     
+}
+
+@media(min-width: 500px) and (max-width: 1100px) {
+
+    header {
+        padding: 20px;
+    }
+    
+    header .logo {
+        font-size: large;
+    }
+
+    header label {
+        display: initial;
+        font-size: large;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: green;
+        border-top: 1px solid rgba(0, 0, 0, .1);
+        display: none;
+    }
+
+    header .navbar ul li {
+        width: 100%;
+        font-size: large;
+    }
+
+    #menu-bar:checked ~ .navbar {
+        display: initial;
+    }
+
+    main form label {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    main form .campos {
+        display: flex;
+        flex-direction: row;
+        padding: 5px 10px 5px;
+        flex-wrap: wrap;
+    }
+
+    main form #botao {
+        width: 50%;
+    }
+
 }
 
